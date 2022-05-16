@@ -1,0 +1,164 @@
+body {
+        height: 100%;
+        margin: 0;
+        padding: 0 10px;
+        font-family: 'Ubuntu', sans-serif;
+        background-image: url(bc1.avif);
+        background-size: cover;
+    }
+
+.title {
+    display: flex;
+    justify-content: center;
+    color: rgb(20, 113, 123);
+}
+
+h1 {
+    font-family: 'Lobster', cursive;
+    font-size: 40px;
+    color: #185c52;
+    text-shadow: 1px 1px 2px white;
+    transition: transform 0.5s ease;
+}
+
+h1:hover {
+    color: #44797d;
+    text-shadow: 1px 1px 2px rgb(223, 228, 170);
+    font-weight: 900;
+    transform: scale(1.5);
+}
+
+.about { 
+    display: flex;
+    gap: 10px;
+    justify-content: center; 
+}
+
+.aboutText {
+    background-color: rgba(244, 238, 238, 0.728);
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.aboutText>div {
+    font-weight: 300;
+    padding-bottom: 20px;
+}
+
+.aboutTextDescription {
+    font-style: italic;
+}
+
+.year {
+    font-weight: 700;
+}
+
+img {
+    height: 500px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 20px rgba(57, 94, 71, 0.851);
+    transition: transform ease 1s;
+}
+
+img:hover {
+    transform: scale(1.1);
+}
+
+p {
+    margin: 0;
+    font-weight: 700;
+}
+
+.actors {
+    margin: 10px;
+    padding-inline-start: 10px;
+}
+
+li {
+    list-style: none;
+    margin: 10px 0;
+    padding: 5px 0;
+    transition: transform 0.5s ease;
+}
+
+li:hover {
+    transform: translateX(20px) ;
+}
+
+a {
+    color: rgba(9, 37, 48, 0.851);
+    text-shadow: 0px 1px 2px rgb(144, 147, 112);
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    border-radius: 20px;
+    font-size: 20px;
+    font-weight: 700;
+    border: none;
+    padding: 15px;
+    font-family: 'Ubuntu', sans-serif;
+    margin: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.68);
+    box-shadow: 3px 3px 10px rgb(95, 126, 85);
+    cursor: pointer;
+}
+@media all and (max-width: 800px) {
+
+    img {
+        width: 300px;
+        height: 100%;
+        object-fit: contain;
+        border-radius: 10px;
+        box-shadow: 10px 10px 20px rgba(57, 94, 71, 0.851);
+        transition: transform ease 1s;
+    }
+    
+}
+
+@media all and (max-width: 500px) {
+
+    .about { 
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        align-items: center; 
+    }
+
+    img {
+        width: 300px;
+        height: 100%;
+        object-fit: contain;
+        border-radius: 10px;
+        box-shadow: 10px 10px 20px rgba(57, 94, 71, 0.851);
+        transition: transform ease 1s;
+    }
+    h1 {
+        font-size: 30px;
+    }
+    
+    h1:hover {
+        color: #44797d;
+        text-shadow: 1px 1px 2px rgb(223, 228, 170);
+        font-weight: 900;
+        transform: scale(1.2);
+    }
+
+    button {
+        border-radius: 20px;
+        font-size: 15px;
+        font-weight: 700;
+        border: none;
+        padding: 10px;
+        font-family: 'Ubuntu', sans-serif;
+        margin: 20px;
+        border: 1px solid rgba(255, 255, 255, 0.68);
+        box-shadow: 3px 3px 10px rgb(95, 126, 85);
+    }
+}

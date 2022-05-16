@@ -1,0 +1,137 @@
+body {
+    height: 100%;
+    margin: 0;
+    font-family: 'Ubuntu', sans-serif;
+    background-image: url(bc1.avif);
+    background-size: cover;
+}
+
+body:hover {
+    backdrop-filter: blur(7px);
+    height: 100vh;
+}
+
+.top {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 35px;
+}
+.parent {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+img {
+    width: 350px;
+    border-radius: 50%;
+    box-shadow: 10px 10px 20px white;
+    transition: transform 2s ease;
+}
+
+img:hover {
+    transform: rotate(360deg);
+}
+
+h1 {
+    font-family: 'Lobster', cursive;
+    font-size: 40px;
+    color: #185c52;
+    text-shadow: 1px 1px 2px white;
+    transition: transform 0.5s ease;
+}
+
+h1:hover {
+    color: #44797d;
+    text-shadow: 1px 1px 2px rgb(223, 228, 170);
+    font-weight: 900;
+    transform: scale(1.5);
+}
+
+a {
+    color: rgba(9, 37, 48, 0.851);
+    text-shadow: 0px 1px 2px rgb(144, 147, 112);
+}
+li {
+    font-family: 'Ubuntu', sans-serif;
+    font-style: italic;
+    font-size: 20px;
+    padding: 10px;
+    margin: 10px 0;
+    transition: transform 0.5s ease;
+}
+
+li:hover {
+    background-color: #8aba9d9c;
+    border-radius: 20px;
+    box-shadow: 0px 3px 10px rgb(144, 147, 112);
+    text-decoration: none;
+    transform: translate(-30px) scale(1.2);
+}
+
+@media all and (max-width: 800px) {
+    .parent {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-around;
+    }
+    ul {
+        align-self: flex-start;
+    }
+
+    body {
+        background-color: #CCF3EE;
+    }
+
+    body:hover {
+        background-color: #F9F3EE;
+    }
+
+    li:hover {
+        transform: translate(30px) scale(1.2);
+    }
+
+    img {
+        width: 300px;
+        border-radius: 50%;
+        box-shadow: -5px -5px 20px white;
+        transition: transform 2s ease;
+    }
+}
+
+@media all and (max-width: 500px) {
+    .parent {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    ul {
+        align-self: flex-start;
+    }
+
+    img {
+        width: 200px;
+        border: 1px solid rgba(255, 255, 255, 0.68);
+        box-shadow: 3px 3px 20px white;
+    }
+
+    h1 {
+        font-size: 27px;
+    }
+
+    h1:hover {
+        transform: scale(1.3);
+    }
+
+    a {
+        font-size: 15px;
+    }
+
+    body {
+        background-size: auto;
+    }
+
+    .top {
+        margin-bottom: 5px;
+        
+    }
+}
